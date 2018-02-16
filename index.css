@@ -1,0 +1,276 @@
+
+.container1 {
+  height: 100vh;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+}
+
+.navbar {
+  /* position: relative; */
+  width: 100%;
+  background-color: transparent;
+  border: none;
+}
+
+.navbar a {
+  float:left;
+  color:black;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+#trailInfo {
+  font-family: Montserrat;
+  font-weight: bold;
+  padding: 0;
+}
+
+h1#trailInfoU {
+  text-decoration: underline;
+}
+
+h1#title {
+    margin-top: 0;
+    /* margin-bottom: 20px; */
+    position: absolute;
+    width: 100%;
+    /*height: 100%;*/
+    top: 35%;
+    transform: translateY(-35%);
+    /* padding-top: 50%; */
+}
+p#titletext {
+    margin-top: 20px;
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+    text-align: center;
+    top: 45%;
+    transform: translateY(-45%);
+    /* padding-top: 50%; */
+}
+p#titletext2 {
+    margin-top: 0;
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    /* padding-top: 50%; */
+}
+
+b {
+  text-decoration: underline;
+}
+
+img {
+  width: 328px;
+  height: 165px;
+  /* border: 1px solid black; */
+}
+
+.imageContainer {
+  display: inline-block;
+  /* text-align: left; */
+  width: 100%;
+}
+
+.figureContainer {
+  display: inline-block;
+}
+
+.figureContainer > img:hover {
+  width: 600px;
+  height: 350px;
+}
+
+figcaption {
+  max-width: 80%;
+  padding: 0;
+}
+
+#title {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+#titletext, #titletext2Link {
+  font-family: Montserrat;
+  font-size: 15px;
+}
+
+#varTotName {
+  margin: 30px;
+  /* font-size: 50px;  */
+  font-weight:bold;
+}
+
+.glyphicon-menu-down {
+  font-size: 50px;
+  top: 80%;
+}
+.glyphicon-menu-left {
+  display: inline-block;
+  font-size: 14px;
+  padding-right: 5px;
+  /* padding-top: 10px; */
+}
+
+.container {
+  text-align: center;
+}
+
+.tooltip {
+  position: absolute;
+  /* display: none; */
+  min-width: 80px;
+  height: auto;
+  background: black;
+  /* none repeat scroll 0 0 #ffffff; */
+  border: 1px solid #6F257F;
+  padding: 14px;
+  text-align: center;
+  font-size: 100px;
+}
+
+.chart .legend {
+  fill: black;
+  font: 14px Montserrat;
+  text-anchor: start;
+  font-size: 12px;
+}
+
+.chart text {
+  fill: white;
+  font: 10px Montserrat;
+  text-anchor: end;
+}
+
+.chart .label {
+  fill: black;
+  font: 14px Montserrat;
+  text-anchor: end;
+  max-width: 10px;
+}
+
+.label text {
+  height: 100px;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.bar .barhover {
+visibility: hidden;
+width: 120px;
+background-color: black;
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 5px 0;
+
+/* Position the tooltip */
+position: absolute;
+z-index: 1;
+}
+
+.bar:hover .barhover {
+    visibility: visible;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.table {
+  display: inline-block;
+  width: auto;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+.btn {
+  font-family: Montserrat;
+  font-weight: bold;
+}
+
+
+.btn-default {
+  border: none;
+  border-bottom: 2px solid #ddd;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.btn-default:hover, .btn-default:active {
+  background-color: transparent;
+  border-bottom: 2px solid black;
+}
+
+.dropdown {
+  display: inline-block;
+  /* width: 20%; */
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: bold;
+  vertical-align: top;
+  /* padding-right: 50px; */
+  /* max-width: 30%; */
+  /* padding-bottom: 45%; */
+
+  /* background-color: white; */
+}
+
+.dropdown-menu {
+  cursor: pointer;
+  text-align: left;
+  /* max-width: 30%; */
+  /* right:50%; */
+  /* float: left; */
+  /* position: relative; */
+}
+
+.dropdown:hover .dropdown-menu {
+  display: inline-block;
+  /* width: 20%; */
+  /* text-align: center; */
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary {
+    /* color: #fff; */
+    background-color: transparent;
+    /* border-color: none; */
+}
+toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover, .open>.dropdown-toggle.btn-primary:active {
+    color: black;
+    background-color: transparent;
+    /* border-color: #122b40; */
+}
+
+.dropdown-toggle, .dropdown-toggle:hover, .dropdown-toggle:active {
+  border: none;
+  border-radius: 0;
+  font-family: Montserrat;
+  color: black;
+  background-color: transparent;
+  overflow: hidden;
+  /* padding-bottom: 45%; */
+  /* height: 100% */
+}

@@ -1,0 +1,110 @@
+<div class="container1"><h1 id="title">World Visualization: What Do People Think?</h1>
+  <p id="titletext">Below you will find a world visualization of what people in different countries think about certain values and beliefes.</br> The data sets are collected from 36 chosen countries and eight different variables.</br>Explore the data by clicking on the arrow or by scrolling down.  </p>
+  <p id="titletext2"></br></br></br></br></br></br><a id="titletext2Link" href="#!/trail">Link to Analytic Trail</a></p>
+  <span class="glyphicon glyphicon-menu-down" ng-click="scrollToMap('map');"></span>
+</div>
+<div class="container map" id="container" style="position: relative; width: 1000px; height: 600px;">
+</div>
+
+<!-- <div class="container">
+<div id="lynn" class="row">
+<div class="col"> -->
+<div class="container" id="scrollTable">
+  <div>
+    <p style="font-style:italic; margin-bottom: 30px;">Countries with available data are marked with blueish color.</br>Click on a country to get specific data. And change variable by hovering over the dropdown.</p>
+    <p style="font-style:italic;" id="currentCountry"></p>
+  </div>
+  <div class="row">
+    <!-- <div class="col-md-3">
+    </div> -->
+    <div class="col-md-12">
+    <div class="dropdown">
+      <a class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Choose/Change Variable
+      <span class="caret" style='margin-left:10px;'></span></a>
+      <ul class="dropdown-menu">
+        <li><a id="dropdownId" ng-click="specificVariable('V1', $event);">Aim for country: First choice</a></li>
+        <li><a id="dropdownId" ng-click="specificVariable('V2', $event);">Environment vs Economic Growth</a></li>
+        <li><a id="dropdownId" ng-click="specificVariable('V3', $event)">Confidence: Armed Forces</a></li>
+        <li><a id="dropdownId" ng-click="specificVariable('V4', $event)">Employment status</a></li>
+        <li><a id="dropdownId" ng-click="specificVariable('V5', $event)">State of Health</a></li>
+        <li><a id="dropdownId" ng-click="specificVariable('V6', $event)">Feelings of Happiness</a></li>
+        <li><a id="dropdownId" ng-click="specificVariable('V7', $event)">Trust In People</a></li>
+        <li><a id="dropdownId" ng-click="specificVariable('V8', $event)">Income Equality</a></li>
+      </ul>
+    </div>
+
+  <table class="table table-sm" style="margin-left: 80px;">
+    <thead>
+      <tr>
+        <th id="varName"scope="col" style="font-size: 15px; border-color: black;">Aim for country: First choice</th>
+        <th scope="col" style="font-size: 15px; border-color: black;">1995-1999</th>
+      </tr>
+    </thead>
+    <thead id="table">
+    </thead>
+  </table>
+  <table class="table table-sm">
+    <thead>
+      <tr>
+        <th scope="col" style="font-size: 15px; border-color: black;;">2000-2004</th>
+      </tr>
+    </thead>
+    <thead id="table1">
+    </thead>
+  </table>
+  <table class="table table-sm">
+    <thead>
+      <tr>
+        <th scope="col" style="font-size: 15px; border-color: black;;">2004-2009</th>
+      </tr>
+    </thead>
+    <thead id="table2">
+    </thead>
+  </table>
+  <table class="table table-sm">
+    <thead>
+      <tr>
+        <th scope="col" style="font-size: 15px; border-color: black;">2010-2014</th>
+      </tr>
+    </thead>
+    <thead id="table3">
+    </thead>
+  </table>
+</div>
+</div>
+</div>
+<!-- </div>
+</div>
+</div> -->
+
+<div class ="container" id="chart">
+  <div>
+    <h1 style="margin-top: 30px; font-size: 50px; font-weight:bold;">World Average per Variable</h1>
+    <p style="font-style:italic; margin-bottom: 30px;">Click on a variable below to show the world average data</p>
+  </div>
+  <div class="row justify-content-sm-center">
+    <div class="col">
+      <a type="button" class="btn btn-default" id="btn" ng-click="specificVariable('V1',$event);">Aim for country: First choice</a>
+      <a type="button" class="btn btn-default" id="btn" ng-click="specificVariable('V2',$event);">Environment vs Economic Growth</a>
+      <a type="button" class="btn btn-default" id="btn" ng-click="specificVariable('V3',$event);">Confidence: Armed Forces</a>
+      <a type="button" class="btn btn-default" id="btn" ng-click="specificVariable('V4',$event);">Employment status</a>
+      <a type="button" class="btn btn-default" id="btn" ng-click="specificVariable('V5',$event);">State of Health</a>
+      <a type="button" class="btn btn-default" id="btn" ng-click="specificVariable('V6',$event);">Feelings of Happiness</a>
+      <a type="button" class="btn btn-default" id="btn" ng-click="specificVariable('V7',$event);">Trust In People</a>
+      <a type="button" class="btn btn-default" id="btn" ng-click="specificVariable('V8',$event);">Income Equality</a>
+    </div>
+  </div>
+  <div class="row justify-content-sm-center">
+    <div class="col">
+      <h1 id="varTotName">Variable</h1>
+      <svg class='chart'></svg>
+      <div id="text"></div>
+    </div>
+  </div>
+
+</div>
+
+
+
+<div id=variables></div>
+<!-- <button>TEST</button> -->
